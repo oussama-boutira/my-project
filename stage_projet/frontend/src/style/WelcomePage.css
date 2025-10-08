@@ -1,0 +1,93 @@
+
+.welcome-container {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .section-title {
+    margin-top: 40px;
+  }
+  
+  .subtitle {
+    color: #b8934c;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #0e1b3b;
+    margin: 10px 0;
+  }
+  
+  .divider {
+    color: #b8934c;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .all_container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 70em;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  /* Overlay sombre */
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero-overlay {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    padding: 40px;
+    width: 600px;
+    max-width: 800px;
+    border-radius: 10px;
+  }
+  
+  .hero-overlay h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-overlay p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #c08b6d;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #a76d4d;
+  }
+  

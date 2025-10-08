@@ -1,0 +1,98 @@
+.car-item {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .car-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .car-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .car-img-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .car-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .car-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .car-price {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #c08b6d;
+  }
+  
+  .car-price span {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .car-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .car-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .car-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .car-btn {
+    flex: 1;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: background 0.3s ease;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .car-btn.rent {
+    background-color: #c08b6d;
+  }
+  
+  .car-btn.rent:hover {
+    background-color: #a76d4d;
+  }
+  
+  .car-btn.details {
+    background-color: #333;
+  }
+  
+  .car-btn.details:hover {
+    background-color: #555;
+  }
+  

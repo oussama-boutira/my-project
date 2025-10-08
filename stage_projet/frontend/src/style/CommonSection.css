@@ -1,0 +1,18 @@
+.common__section {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../../../../IMAGES/drive.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0px;
+  }
+  
+  .common__section h2 {
+    color: #c08b6d;
+    font-size: 2rem;
+    text-align: center;
+  }
+  

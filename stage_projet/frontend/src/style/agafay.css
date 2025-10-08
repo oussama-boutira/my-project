@@ -1,0 +1,12 @@
+.agafay-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px 30px;
+}
+.agafay-List {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+  }
+  

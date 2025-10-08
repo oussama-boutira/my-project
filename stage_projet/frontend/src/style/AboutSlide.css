@@ -1,0 +1,154 @@
+/* Section principale */
+.about-section {
+    padding: 0px 300px;
+    background-color: #ffffff; /* Fond blanc */
+    color: #c08b6d; /* Texte cuivré / or rose */
+  }
+  
+  /* Contenu global */
+  .about-section-content {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Contenu texte */
+  .text-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .text-content h2 {
+    font-size: 2.2rem;
+    color: #000000; /* Titre principal en noir pour contraste */
+    margin-top: 10px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    color: #555555; /* Texte gris foncé pour lisibilité sur fond blanc */
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* Liste des features */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+    margin-top: 20px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  
+  .feature-item p {
+    color: #555555;
+    font-size: 0.95rem;
+  }
+  
+  .check-icon {
+    color: #c08b6d;
+    font-size: 1.3rem;
+  }
+
+  .about-btn {
+    background-color: #c08b6d;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Effet hover */
+  .about-btn:hover {
+    background-color: #a76d4d;
+    transform: translateY(-2px);
+  }
+  
+  /* Lien à l’intérieur du bouton */
+  .btn-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  
+  /* Contenu image */
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-content img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  
+  /* Responsive - mobile */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 20px 0;
+    }
+  
+    .about-section-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .text-content {
+      padding-right: 0;
+      text-align: center;
+      max-width: 90%;
+    }
+  
+    .text-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .text-content p {
+      font-size: 0.95rem;
+      text-align: center;
+    }
+  
+    .features-grid {
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+    }
+  
+    .feature-item {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .check-icon {
+      font-size: 1.2rem;
+    }
+  
+    .image-content img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  

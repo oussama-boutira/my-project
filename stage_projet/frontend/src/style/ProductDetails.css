@@ -1,0 +1,173 @@
+/* Carrousel */
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.product-slide {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-slide:hover {
+  transform: scale(1.05);
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.carousel-price {
+  color: #333;
+  margin: 5px 0;
+}
+
+.view-details {
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-details:hover {
+  background-color: #FFC300;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Product container */
+.product-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Main product details */
+.product-detail {
+  display: flex;
+  gap: 30px;
+}
+
+.main-product-img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.detail-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.product-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product-description {
+  color: #555;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #FFD700;
+}
+
+.quantity input {
+  width: 60px;
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.add-to-cart {
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-to-cart:hover {
+  background-color: #FFC300;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .prev, .next {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  .product-slide {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-slide {
+    padding: 10px;
+  }
+}

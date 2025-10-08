@@ -1,0 +1,13 @@
+.car-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;   
+    width: 70%;
+  }
+  

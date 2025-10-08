@@ -1,0 +1,105 @@
+/* Styles généraux */
+.apartment-details {
+    padding: 40px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Wrapper principal */
+  .apartment-details__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .apartment-details__image {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .apartment-details__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Informations de l'appartement */
+  .apartment-details__info {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .apartment-details__info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .apartment-details__meta {
+    font-size: 1.2rem;
+    color: #c08b6d; /* La couleur principale de la charte graphique */
+    margin-bottom: 15px;
+  }
+  
+  .apartment-details__features {
+    margin-top: 20px;
+  }
+  
+  .apartment-details__features p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .apartment-details__features svg {
+    color: #f9a826;
+    margin-right: 8px;
+  }
+  
+  /* Galerie d'images */
+  .image-gallery {
+    margin-top: 30px;
+  }
+  
+  .image-gallery h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .image-gallery__thumbnails {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .image-gallery__thumbnails img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-gallery__thumbnails img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Section de réservation */
+  .booking-section {
+    margin-top: 40px;
+  }
+  
+  .booking-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
